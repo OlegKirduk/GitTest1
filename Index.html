@@ -9,14 +9,46 @@
 <body>
     <header>
         <h1>Анкета кандидата</h1>
-        <p> Анкета кандидата на прохождение стажировки в ресторане "Tasty style"</p>
+        <p> Анкета кандидата на прохождение стажировки в ресторане "Tasty style"*</p>
     </header>
     <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
-        
-
+        <div>
+            <p>Как Вас зовут?</p>
+            <input type="text" name="name" placeholder="ваше имя и фамилия" tabindex="1">
+            <p>Какой Ваш номер телефона?</p>
+            <input type="tel" name="telephone" tabindex="2">
+        </div>
+        <br>
+        <div>
+            <p>Курите ли Вы?</p>
+            <input type="radio" name="smoking" value="yes" tabindex="3">Курю
+            <input type="radio" checked name="smoking" value="no" tabindex="3"> Не курю
+        </div>
+        <br>
+        <div>
+            <p>Где Вы проживаете?</p>
+            <textarea name="adress" cols="30" rows="10" tabindex="4"></textarea>
+        </div>
+        <br>
+        <div>
+            <p>Состоите ли Вы в браке?</p>
+            <select name="marriage" tabindex="5">
+                <option value="married">Да, у меня есть муж</option>
+                <option selected value="single">Нет, я предпочитаю быть одной</option>
+                <option value="angry">Я не хочу отвечать на этот вопрос!</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <p>Ваше фото</p>
+            <input type="file" name="photo" tabindex="6">
+        </div>
+        <br>
+        <button type="reset" tabindex="7">Сбросить</button>
+        <button type="submit" tabindex="8">Отправить</button>
     </form>
     <footer>
-        <h2>Designed by Oleg Baranovsky</h2>
+        <h2>*Ресторан "Tasty style" находится в Вообрашляндии, между отелем "Ляськи-масяськи" и театром "Ракамакафо"</h2>
     </footer>
 </body>
 </html>
